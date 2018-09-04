@@ -113,8 +113,8 @@ endif
 ifdef WINDOWS_SCIP_DIR
   SCIP_INC = /I$(WINDOWS_SCIP_DIR)\\include /DUSE_SCIP
   SCIP_SWIG = -I$(WINDOWS_SCIP_DIR)/include -DUSE_SCIP
-  STATIC_SCIP_LNK = $(WINDOWS_SCIP_DIR)\\libscipopt.lib
-  DYNAMIC_SCIP_LNK = $(WINDOWS_SCIP_DIR)\\libscipopt.lib
+  STATIC_SCIP_LNK = $(WINDOWS_SCIP_DIR)\\lib\\scip.lib
+  DYNAMIC_SCIP_LNK = $(STATIC_SCIP_LNK)
 endif
 # This is needed to find CPLEX include files and libraries.
 ifdef WINDOWS_CPLEX_DIR
